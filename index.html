@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Caeser Cipher</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <section class = 'pageHeading'>
+            <h1>Let's encrypt your text file!</h1>
+        </section>
+        <div class="file-input">
+            <label class = "new-button" for ="file">Select file</label>
+            <input type="file" id="file" class="file">
+          </div>
+        <section class = "fileReadResult">
+            <label for = "readResult">The original text:</label>
+            <br>
+            <div id = "readResult">               
+            </div>
+        </section>
+        <section class = "encodingArea">
+            <button type="button" id="encode-button" onclick = "encode()">Encode</button>
+            <br>
+            <p id = 'cipher'></p>
+
+        </section>
+
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
